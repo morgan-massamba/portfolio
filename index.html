@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Morgan Massamba</title>
+    <link rel="stylesheet" href="./scss/style.css" />
+    <script
+      src="https://kit.fontawesome.com/3b287311ff.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+          <div class="logo">MM</div>
+
+          <nav>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="hamburger">
+            <i class="fas fa-bars"></i>
+          </div>
+      </header>
+
+      <div class="dropdown-menu">
+        <button class="close-btn">X</button>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <section class="section-home" id="home">
+        <div class="wrapper">
+
+          <div class="personnal-infos">
+            <h2 class="heading">
+              Hello !
+            </h2>
+            <h2 class="heading heading-bg">
+              <span>I'm</span> Morgan
+            </h2>
+            <h3 class="work">
+              Front-End Developer currently looking for a job.
+            </h3>
+            <p class="bio">
+              Based in France, I consider myself as a self taugh developer. What I like the most is to let speak my creativy and start building new things. Here is my portfolio where you can learn more about my work..
+            </p>
+            <a href="#contact">
+              <i class="far fa-envelope"></i>
+              <span>Let's Talk</span>
+            </a>
+          </div>
+
+          <div class="image-content">
+            <img
+              src="./images/morgan-profile.jpg"
+              alt="photography of Morgan Massamba"
+            />
+          </div>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <section class="section-projects" id="projects">
+        <h4>Latest work</h3>
+        <h2>My Projects</h2>
+        <!--Item-->
+        <div class="wrapper-project">
+          <div class="showcase-project">
+            <img src="./images/preview_groupomania.png" alt="">
+          </div>
+          <div class="project-info">
+            <div class="project-info__number">01</div>
+            <h3 class="project-info__title">Social Network</h3>
+            <p class="project-info__description">Build a Social Network where you can create, read, update and delete posts. You can post content such as text or images. You can also add comments and likes.
+              I used MySQL for the database and Vue.js for the frontend.
+            </p>
+            <a class="project-info__btn" href="#"><i class="fab fa-github"></i>See on github</a>
+            <a class="project-info__btn" href="#">Live website</a>
+          </div>
+        </div>
+        <!--End Item-->        
+        <!--Item-->
+        <div class="wrapper-project">
+          <div class="showcase-project">
+            <img src="./images/preview_country_api.jpg" alt="">
+          </div>
+          <div class="project-info">
+            <div class="project-info__number">02</div>
+            <h3 class="project-info__title">Country search with API</h3>
+            <p class="project-info__description">Website which references all countries. The user can search with an input field and also filter by regions. You can click on a country to see more detailed information on a separate page.</p>
+            <a class="project-info__btn" href="#"><i class="fab fa-github"></i>See on github</a>
+            <a class="project-info__btn" href="#">Live website</a>
+          </div>
+        </div>
+        <!--End Item-->
+        <!--Item-->
+        <div class="wrapper-project">
+          <div class="showcase-project">
+            <img src="./images/preview_tic_tac_toe.png" alt="">
+          </div>
+          <div class="project-info">
+            <div class="project-info__number">03</div>
+            <h3 class="project-info__title">Tic Tac Toe Game</h3>
+            <p class="project-info__description">Build a tic tac toe game with Vue 3 and the composition API / Vue-Router / Vuex.</p>
+            <a class="project-info__btn" href="#"><i class="fab fa-github"></i>See on github</a>
+            <a class="project-info__btn" href="#">Live website</a>
+          </div>
+        </div>
+        <!--End Item-->        
+        <!--Item-->
+        <div class="wrapper-project">
+          <div class="showcase-project">
+            <img src="./images/preview_rock_paper_scissors.jpg" alt="">
+          </div>
+          <div class="project-info">
+            <div class="project-info__number">04</div>
+            <h3 class="project-info__title">Rock Paper Scissors</h3>
+            <p class="project-info__description">Build a rock, paper, scissors game, with Vue 3.</p>
+            <a class="project-info__btn" href="#"><i class="fab fa-github"></i>See on github</a>
+            <a class="project-info__btn" href="#">Live website</a>
+          </div>
+        </div>
+        <!--End Item-->
+      </section>
+
+      <div class="divider"></div>
+
+      <section class="section-contact" id="contact">
+        <h4>Have a project ?</h4>
+        <h2>Let's Work Together</h2>
+
+        <form>
+          <div class="input-field">
+            <label for="name">Your name:</label>
+            <input type="name" id="name" name="name">
+          
+            <label for="email">Your email:</label>
+            <input  type="email" id="email" name="email">
+          </div>
+
+          <div class="input-field input-field-textarea">
+            <label for="project">Describe your project:</label>
+            <textarea rows="8" id="project" name="project"></textarea>
+          </div>
+          
+          <button type="submit">Send request</button>
+        </form>
+      </section>
+
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
