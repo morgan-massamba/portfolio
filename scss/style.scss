@@ -23,7 +23,7 @@ body{
     top: 0;
     right: 0;
     bottom: 0;
-    background: #DCEAEB;
+    background: #fff;
     z-index: 100;
     display: none;
     justify-content: center;
@@ -61,8 +61,9 @@ body{
         height:50px;
         cursor: pointer;
         border: none;
-        background: white;
+        border: 1px solid #141414;
         border-radius: 50%;
+        background: white;
         font-size: 1.5rem;
         font-weight: 500;
         font-family: 'Playfair Display', sans-serif;
@@ -151,10 +152,11 @@ h2{
             }
         }
         .work{
-            margin-top:20px;
+            margin-top:30px;
+            font-size: 1.8rem;
         }
         .bio{
-            margin-top:20px;
+            margin-top:30px;
             line-height: 1.5;
         }
         a{
@@ -203,6 +205,67 @@ h2{
     height: 1px;
     background-color: rgba($color: #000000, $alpha: 0.1);
 }
+
+//SECTION SKILLS
+.section-skills{
+    h4{
+        color: rgba($color: #000000, $alpha: 0.5);
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        font-family: 'Big Shoulders Display', sans-serif;
+    }
+    h2{
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+    }
+}
+.wrapper-skills{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &__items{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    &__content{
+        width: 50%;
+        text-align: center;
+        h4{
+            margin-bottom: 30px;
+        }
+        p{
+            margin-top: 20px;
+        }
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        flex-wrap:wrap;
+        margin-bottom: 20px;
+        .skill-logo{
+            width: 50px;
+            height:50px;
+            margin-right:20px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+        }
+        span{
+            font-weight: 500;
+            color: rgba($color: #000000, $alpha: 0.8);
+        }
+    }
+}
+
 //SECTION PROJECTS
 .section-projects{
     h4{
@@ -301,7 +364,7 @@ h2{
     }
     h2{
         font-size: 2.5rem;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
     }
     form{
         margin-top: 20px;
@@ -372,7 +435,7 @@ h2{
 
 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:780px){
     section{
         padding: 40px 20px;
     }
@@ -385,6 +448,7 @@ h2{
             display: flex;
         }
     }
+    //SECTION HOME
     .section-home{
         .wrapper{
             justify-content: center;
@@ -393,22 +457,36 @@ h2{
             width: 100%;
             padding-left: 0;
             text-align: center;
+            order: 2;
             .heading{
                 font-size: 4rem;
             }
+            .work{
+                font-size: 1.4rem;
+            }
         }
         .image-content{
-            width: 100%;
-            margin-top: 40px;
-            display: none;
+            width: 50%;
+            order: 1;
+            margin-bottom: 40px;
         }
 
     }
-
+    //SECTION SKILLS
+    .wrapper-skills__items{
+        width: 100%;
+    }
+    .wrapper-skills__content{
+        width: 100%;
+        margin-top: 30px;
+    }
+    //SECTION PROJECTS
     .wrapper-project{
         margin-bottom: 50px;
+        justify-content: center;
         .showcase-project{
-            width: 100%;
+            width: 400px;
+            height: 300px;
             margin-bottom: 30px;
         }
         &:nth-of-type(2n){
@@ -431,6 +509,7 @@ h2{
             }
         }
     }
+    //SECTION CONTACT
     .section-contact{
         form{
             width: 80%;
@@ -439,4 +518,34 @@ h2{
             width: 100%;
         }
     }
+}
+
+@media screen and (max-width:600px){
+    //SECTION HOME
+    .section-home{
+        .image-content{
+            display: none;
+        }
+    }
+    //SECTION PROJECTS
+    .wrapper-project{
+        .showcase-project{
+            width: 100%;
+            height: 250px;
+            margin-bottom: 30px;
+        }
+    }
+}
+@media screen and (max-width:365px ) {
+        //SECTION HOME
+        .section-home{
+            .personnal-infos{
+                .heading{
+                    font-size: 2.8rem;
+                }
+                .work{
+                    font-size: 1.2rem;
+                }
+            }
+        }
 }
