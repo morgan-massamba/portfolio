@@ -677,6 +677,9 @@ h2 {
     height: 250px;
     margin-bottom: 30px;
   }
+  .wrapper-skills__item .skill-logo {
+    margin-right: 10px;
+  }
 }
 
 @media screen and (max-width: 365px) {
