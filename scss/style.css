@@ -9,6 +9,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   font-family: 'Montserrat', sans-serif;
@@ -76,7 +80,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  right: 40px;
+  right: 20px;
   width: 50px;
   height: 50px;
   cursor: pointer;
@@ -99,7 +103,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px 70px;
+  padding: 40px 100px;
 }
 
 header .logo {
@@ -530,7 +534,8 @@ h2 {
   -ms-flex-item-align: start;
       align-self: flex-start;
   font-family: 'Playfair Display', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 1.2rem;
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -585,7 +590,7 @@ h2 {
     padding: 40px 20px;
   }
   header {
-    padding: 40px;
+    padding: 40px 20px;
   }
   header nav {
     display: none;
@@ -621,12 +626,21 @@ h2 {
             order: 1;
     margin-bottom: 40px;
   }
+  .section-skills h2 {
+    font-size: 2rem;
+  }
   .wrapper-skills__items {
     width: 100%;
+  }
+  .wrapper-skills__items .left {
+    margin-bottom: 20px;
   }
   .wrapper-skills__content {
     width: 100%;
     margin-top: 30px;
+  }
+  .section-projects h2 {
+    font-size: 2rem;
   }
   .wrapper-project {
     margin-bottom: 50px;
@@ -659,6 +673,9 @@ h2 {
   .wrapper-project .project-info a {
     margin-bottom: 15px;
     margin-right: 0;
+  }
+  .section-contact h2 {
+    font-size: 2rem;
   }
   .section-contact form {
     width: 80%;
