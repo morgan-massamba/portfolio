@@ -498,11 +498,36 @@ h2 {
   margin-bottom: 50px;
 }
 
+.section-contact .container-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section-contact .map-content {
+  width: 50%;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-contact .map-content iframe {
+  width: 80%;
+  height: 80%;
+}
+
 .section-contact form {
   margin-top: 20px;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -511,6 +536,7 @@ h2 {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 40px;
 }
 
 .section-contact .input-field {
@@ -585,7 +611,7 @@ h2 {
   font-weight: 500;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1020px) {
   section {
     padding: 40px 20px;
   }
