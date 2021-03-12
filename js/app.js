@@ -16,22 +16,22 @@ gsap.timeline()
     })
     .to(
         '.container-intro',
-        1,
+        1.5,
         {
             display: 'none',
             ease: "power2.out"
         },
-        '-=0.8'
+        '-=1'
     )
     .to(
         '.container',
-        1,
+        1.5,
         {
             opacity: 1,
             display:'block',
             ease: "power2.out"
         },
-        '-=0.8'
+        '-=0.5'
     );
 
 //HAMBURGER MENU 
