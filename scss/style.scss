@@ -18,6 +18,9 @@ body{
 .container{
     margin: 0 auto;
     width: 100%;
+    //SET OPACITY AND VISIBILITY FOR GSAP ANIMATION
+    display: none;
+    opacity: 0;
 }
 .dropdown-menu{
     position: fixed;
@@ -402,6 +405,55 @@ h2{
         width: 20px;
     }
     
+}
+
+//AJOUT GSAP EFFECT INTRO 
+.container-intro{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+}
+
+.blocks{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.block-1{
+    width: 10%;
+    height: 100%;
+    background-color:rgb(255, 250, 250);
+}
+.block-2{
+    width: 30%;
+    height: 100%;
+    background-color: whitesmoke;
+    
+}
+.block-3{
+    width: 20%;
+    height: 100%;
+    background-color: #DCEAEB;
+}
+.block-4{
+    width: 10%;
+    height: 100%;
+    background-color: #d2f1f3;
+}
+.block-5{
+    width: 20%;
+    height: 100%;
+    background-color: lightsteelblue;
+}
+.block-6{
+    width: 10%;
+    height: 100%;
+    background-color: lightslategrey;
 }
 
 @media screen and (max-width:1020px){
